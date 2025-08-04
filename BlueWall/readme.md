@@ -1,3 +1,0 @@
-# Bluewall
-
-test push

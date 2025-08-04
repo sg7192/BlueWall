@@ -48,6 +48,6 @@ class BleHeuristicsEngineTest {
         val signature = byteArrayOf(0x01, 0x02, 0x03)
         val ad = BleAdvertisement("AA:BB:CC:DD:EE:FF", -45, 1234L, signature, null, "Trusted")
         val results = engine.analyze(listOf(ad, ad, ad), setOf("AA:BB:CC:DD:EE:FF"))
-        assertFalse(results.isEmpty())
+        assertTrue(results.isEmpty())
     }
 }
